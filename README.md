@@ -5,10 +5,10 @@
 
 El patró de disseny Iterator és un dels patrons més utilitzats en la programació orientada a objectes i és part dels patrons de disseny de comportament. Aquest patró proporciona una manera eficient de recórrer una col·lecció d'elements, sense exposar la seva implementació interna.
 
-###PROPÒSIT
+### PROPÒSIT
 El propòsit principal del patró Iterador és proporcionar una manera estandarditzada d'accedir seqüencialment als elements d'una col·lecció sense exposar els detalls de la seva implementació interna. Això permet a les col·leccions ser recorregudes de manera uniforme, independentment de la seva estructura interna, i facilita la creació de clients que puguin iterar sobre aquestes col·leccions sense necessitat de conèixer els detalls de la seva implementació. A més, el patró Iterador fa que sigui més senzill afegir nous tipus de col·leccions al codi, ja que només cal proporcionar un iterador adequat per a la nova col·lecció i el codi client ja serà compatible amb aquesta. En resum, el propòsit del patró *Iterator* és proporcionar una **interface** unificada i flexible per recórrer col·leccions de manera eficient i senzilla.
 
-###SOLUCIÓ
+### SOLUCIÓ
 La solució proporcionada pel patró *Iterator* consisteix en separar l'accés als elements d'una col·lecció de la seva implementació interna. Aquesta separació es realitza mitjançant l'ús d'una `interface Iterator` que defineix un conjunt d'operacions estàndard per recórrer els elements de la col·lecció. D'aquesta manera, els clients poden utilitzar l'iterador per recórrer els elements d'una col·lecció sense necessitat de conèixer els detalls de la seva implementació interna.
 
 La solució proporcionada pel patró *Iterator* consta dels següents elements clau:
@@ -21,7 +21,7 @@ La solució proporcionada pel patró *Iterator* consta dels següents elements c
 
 4. **Col·lecció Concreta**: Implementa l'interface de col·lecció i proporciona una implementació específica per crear un iterador per recórrer els seus elements.
 
-###TIPOS DE COL·LECCIONS
+### TIPOS DE COL·LECCIONS
 El patró Iterador és dissenyat per a ser utilitzat amb qualsevol tipus de col·lecció o estructura de dades que contingui múltiples elements i que es pugui recórrer seqüencialment. Això inclou una àmplia varietat de col·leccions, com ara:
 
 - Llistes: Qualsevol tipus de llista, ja sigui una llista enllaçada, una llista d'arrays, una llista ordenada, etc.
@@ -34,7 +34,7 @@ El patró Iterador és dissenyat per a ser utilitzat amb qualsevol tipus de col�
 
 Bàsicament, qualsevol col·lecció que proporcioni una manera d'accedir seqüencialment als seus elements pot ser recorreguda amb el patró *Iterator*. La flexibilitat del patró rau en el fet que permet als clients accedir als elements d'una col·lecció sense necessitat de conèixer la seva implementació interna, sempre que es proporcioni un iterador adequat per recórrer la col·lecció.
 
-###ESTRUCTURA DEL PATRÓ
+### ESTRUCTURA DEL PATRÓ
 [![UML patró ITERATOR](https://refactoring.guru/images/patterns/diagrams/iterator/structure.png "UML patró ITERATOR")](https://refactoring.guru/images/patterns/diagrams/iterator/structure.png "UML patró ITERATOR")
 
 En aquest diagrama:
@@ -48,7 +48,7 @@ En aquest diagrama, *Iterator* i *IterableCollection* són interfícies que defi
 
 El patró Iterator permet als clients recórrer una col·lecció d'objectes sense necessitat de conèixer els detalls de la seva implementació interna, ja que utilitzen la `interface Iterator` per accedir als elements de la col·lecció.
 
-###EXEMPLE D'IMPLEMENTACIÓ DE PATRÓ ITERATOR 
+### EXEMPLE D'IMPLEMENTACIÓ DE PATRÓ ITERATOR 
 
 
 Es declara la *interface* **Iterator**
@@ -116,7 +116,7 @@ Finalment utilitzem el patró creant una instància de ConcreteCollection amb un
     }
 
 
-###AVANTATGES I DESAVANTATGES DEL PATRÓ
+### AVANTATGES I DESAVANTATGES DEL PATRÓ
 Els principals avantatges d'aquest patró son els següents:
 - Desassociar el codi client de la implementació de la col·lecció.
 - Simplificar el mateix codi client.
@@ -127,7 +127,7 @@ Per altra banda els desavantatge son:
 - Un possible cost de memòria addicional, especialment en col·leccions grans i en casos de molts iteradors diferents.
 
 
-#####FONTS
+##### FONTS
 
 https://refactoring.guru/es/design-patterns/iterator
 https://welcomedevelopers.es/patrones-diseno/el-patron-iterator/
